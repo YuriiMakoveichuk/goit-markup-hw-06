@@ -132,9 +132,53 @@ input {
 }
 
 
+/* Hero */
 
-/* 
 
+.hero-section {
+    background-color: #2E2F42;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    max-width: 320px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    max-width: 216px;
+    margin: 0 auto;
+}
+
+.hero-button {
+    margin: 72px auto 0;
+    min-width: 169px;
+    height: 56px;
+}
+
+
+/*  Our advantages  */
+
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.section-title {
+    color: #2E2F42;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
 
 .visually-hidden {
     position: absolute;
@@ -148,6 +192,373 @@ input {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.advantages-icon {
+    display: none;
+}
+
+.section-title-list {
+    color: #2E2F42;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.section-text {
+    font-weight: 500;
+}
+
+.advantages-list {
+    display: block;
+}
+
+.advantages-title {
+    margin-bottom: 8px;
+}
+
+.advantages-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+
+/* Team */
+
+.section-team {
+    background-color: #F4F4FD;
+}
+
+.team-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: block;
+}
+
+.team-card {
+    background-color: #FFFFFF;
+    width: 264px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-card:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.team-block {
+    padding: 32px 0;
+}
+
+.team-card-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.team-card-text {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.icons-svg {
+    fill: #f4f4fd;
+}
+
+.icons-item {
+    width: 40px;
+    height: 40px;
+}
+
+.icons-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons-list:hover,
+.icons-list:focus {
+    background-color: #404bbf;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .hero-section,
+    .section-team {
+        max-width: 768px;
+    }
+}
+
+/* ================= Leptop ================= */
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 736px;
+    }
+
+/* Header  */
+
+    .page-header {
+        padding: 0;
+    }
+
+    .logo-header-position {
+        margin-right: 120px;
+    }
+
+    .page-header-link {
+        color: #2E2F42;
+        font-weight: 500;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+    }
+
+    .header-mobile-button {
+        display: none;
+    }
+
+    .page-header-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .page-header-link:hover,
+    .page-header-link:focus {
+        color: #404BBF;
+    }
+
+    .link-active {
+        color: #404BBF;
+    }
+
+    .link-active::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        left: 0;
+        height: 4px;
+        bottom: -1px;
+        border-radius: 2px;
+        background-color: #404BBF;
+    }
+
+    .contacts-address {
+        display: flex;
+        font-style: normal;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .contacts-link {
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: #404BBF;
+    }
+
+
+/*  Hero */
+
+    .hero-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        max-width: 768px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+
+    .hero-button {
+        margin: 36px auto 0;
+    }
+
+/*  Our advantages  */
+
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .advantages-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .advantages-title {
+        text-align: start;
+    }
+
+
+/* Team */
+
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+        margin: 0 92px;
+    }
+
+    .team-card:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .team-card {
+        width: calc((100% - 24px) / 2);
+    }
+
+
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .hero-section,
+    .section-team {
+        max-width: 1440px;
+    }
+
+}
+
+/* =================== Desktop ================== */
+
+
+@media (min-width: 1158px) {
+
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+
+/*  Header  */
+
+    .logo-header-position {
+        margin-right: 76px;
+    }
+
+    .contacts-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .contacts-link {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .contacts-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+
+/*  Hero  */
+
+
+    .hero-section {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+    }
+
+    .hero-button {
+        margin: 48px auto 0;
+    }
+
+
+/*  Our advantages  */
+
+
+    .section-title-list {
+        color: #2E2F42;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .section-text {
+        font-weight: 400;
+    } 
+
+    .advantages-list {
+        gap: 24px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .advantages-icon {
+        display: flex;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        height: 112px;
+        align-items: center;
+        margin-bottom: 8px;
+        justify-content: center;
+    }
+
+
+/* Team */
+
+    .team-list {
+        display: flex;
+        gap: 24px;
+        margin: 0;
+    }
+
+    .team-card {
+        width: calc((100% - 72px) / 4);
+    }
+
+}
+
+
+
+
+
 
 
 
@@ -193,134 +604,15 @@ input {
 
 
 
-/* 
-
-/* Section */
-
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.section-title {
-    color: #2E2F42;
-    font-size: 36px;
-    line-height: 1.11;
-    text-transform: capitalize;
-    text-align: center;
-    letter-spacing: 0.02em;
-}
-
-.section-title-list {
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-} 
-
-
-
-
-/* Hero */
-/* 
-.hero-section {
-    background-color: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 1440px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/people-office.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.hero-title {
-    color: #FFFFFF;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-    margin: 0 auto;
-}
-
-.hero-button {
-    margin: 48px auto 0;
-    min-width: 169px;
-    height: 56px;
-}
- */
-
-
-
-/* Our advantages */
-/* 
-.advantages-list {
-    display: flex;
-    gap: 24px;
-}
-
-.advantages-item {
-    width: calc((100% - 72px) / 4);
-}
-
-.advantages-title {
-    margin-bottom: 8px;
-}
-
-.advantages-icon {
-    display: flex;
-    background-color: #f4f4fd;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    height: 112px;
-    align-items: center;
-    margin-bottom: 8px;
-    justify-content: center;
-}
- */
-
-
 
 
 /* Team */
-/* 
-.section-team {
-    background-color: #F4F4FD;
-}
 
-.team-title {
-    margin-bottom: 72px;
-}
 
-.team-list {
-    display: flex;
-    gap: 24px; 
-}
 
-.team-card {
-    background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
 
-.team-block {
-    padding: 32px 0 ;
-}
 
-.team-card-name {
-    text-align: center;
-    margin-bottom: 8px;
-}
 
-.team-card-text {
-    text-align: center;
-    margin-bottom: 8px;
-}
- */
 
 
 
@@ -676,109 +968,3 @@ input[type="checkbox"]:checked + .form-checkbox-text .form-checkbox-input {
 
 } */
 
-@media (min-width: 768px) {
-
-        .container {
-            max-width: 736px;
-        }
-
-        .page-header {
-            padding: 0;
-        }
-
-        .logo-header-position {
-            margin-right: 120px;
-        }
-
-        .page-header-link {
-            color: #2E2F42;
-            font-weight: 500;
-            padding-top: 24px;
-            padding-bottom: 24px;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-        }
-
-        .header-mobile-button {
-            display: none;
-        }
-
-        .page-header-list { 
-            display: flex;
-            gap: 40px;
-        }
-
-        .page-header-link:hover,
-        .page-header-link:focus {
-            color: #404BBF;
-        }
-    
-        .link-active {
-            color: #404BBF;
-        }
-
-        .link-active::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            left: 0;
-            height: 4px;
-            bottom: -1px;
-            border-radius: 2px;
-            background-color: #404BBF;
-        }
-
-        .contacts-address {
-            display: flex;
-            font-style: normal;
-            gap: 12px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contacts-item:not(:last-child) {
-            margin-bottom: 12px;
-        }
-
-        .contacts-link {
-            color: #434455;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .contacts-link:hover,
-        .contacts-link:focus {
-            color: #404BBF;
-        }
-}
-
-/* =================== Desktop ================== */
-
-
-@media (min-width: 1158px) {
-
-        .container {
-            max-width: 1158px;
-            padding: 0 15px;
-        }
-        
-    
-        .logo-header-position {
-            margin-right: 76px;
-        }
-    
-        .contacts-list {
-            display: flex;
-            gap: 40px;
-        }
-    
-        .contacts-link {
-            padding-top: 24px;
-            padding-bottom: 24px;
-        }
-
-        .contacts-item:not(:last-child) {
-            margin-bottom: 0;
-        }
-    
-        
-}
