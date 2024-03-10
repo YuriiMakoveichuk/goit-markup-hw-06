@@ -241,7 +241,7 @@ input {
 }
 
 .team-list {
-    display: block;
+    padding: inherit;
 }
 
 .team-card {
@@ -665,6 +665,9 @@ input[type="checkbox"]:checked+.form-checkbox-text .form-checkbox-input {
     pointer-events: none;
     padding: 72px 16px 40px;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .modals-menu-button {
@@ -735,8 +738,13 @@ input[type="checkbox"]:checked+.form-checkbox-text .form-checkbox-input {
 
 /* Header  */
 
+    .modals-menu {
+        display: none;
+    }
+
     .page-header {
-        padding: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     .logo-header-position {
@@ -855,7 +863,8 @@ input[type="checkbox"]:checked+.form-checkbox-text .form-checkbox-input {
         flex-wrap: wrap;
         row-gap: 64px;
         column-gap: 24px;
-        margin: 0 92px;
+        max-width: 552px;
+        margin: 0 auto;
     }
 
     .team-card:not(:last-child) {
@@ -1043,6 +1052,7 @@ input[type="checkbox"]:checked+.form-checkbox-text .form-checkbox-input {
     .team-list {
         gap: 24px;
         margin: 0;
+        max-width: 1154px;
     }
 
     .team-card {
@@ -1072,7 +1082,6 @@ input[type="checkbox"]:checked+.form-checkbox-text .form-checkbox-input {
     .footer-container {
         column-gap: 0;
         row-gap: 0;
-        padding-left: 0;
     }
 
     .footer-block {
