@@ -240,11 +240,8 @@ input {
     margin-bottom: 72px;
 }
 
-.team-list {
-    padding: inherit;
-}
-
 .team-card {
+    margin: 0 auto;
     background-color: #FFFFFF;
     width: 264px;
     border-radius: 0 0 4px 4px;
