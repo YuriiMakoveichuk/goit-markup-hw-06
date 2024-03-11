@@ -674,10 +674,6 @@ input[type="checkbox"]:checked+.form-checkbox-text .form-checkbox-input {
     background-color: #ffffff;
 }
 
-.modals-menu-nav {
-    margin-bottom: 168px;
-}
-
 .modals-menu-nav-item:not(:last-child) {
     margin-bottom: 40px;
 }
